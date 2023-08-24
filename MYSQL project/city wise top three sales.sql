@@ -1,0 +1,1 @@
+SELECT city, MAX(sales) FROM orders GROUP BY city LIMIT 3; 
