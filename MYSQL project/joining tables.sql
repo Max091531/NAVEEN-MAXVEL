@@ -1,1 +1,3 @@
-SELECT city, MAX(sales) FROM orders GROUP BY city LIMIT 3; 
+SELECT * FROM orders
+JOIN persons ON orders.Region = Persons.Region
+JOIN returns ON orders.OrderID = returns.OrderID;
